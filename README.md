@@ -16,14 +16,14 @@ Just upload Original Image and Background Image and Press "Run" button!
     </thead>
     <tbody>
         <tr>
-            <td><img src="https://github.com/589hero/image-background-changer-demo/blob/main/static/images/animal-1.jpg" width="300" height="200"/></td>
-            <td><img src="https://github.com/589hero/image-background-changer-demo/blob/main/static/images/forest-1.jpeg" width="300" height="200"/></td>
-            <td><img src="https://github.com/589hero/image-background-changer-demo/blob/main/static/images/animal-1-out.png" width="300" height="200"/></td>
+            <td><img src="https://github.com/589hero/image-background-changer-demo/blob/main/static/images/animal-1.jpg?raw=true" width="300" height="200"/></td>
+            <td><img src="https://github.com/589hero/image-background-changer-demo/blob/main/static/images/forest-1.jpeg?raw=true" width="300" height="200"/></td>
+            <td><img src="https://github.com/589hero/image-background-changer-demo/blob/main/static/images/animal-1-out.png?raw=true" width="300" height="200"/></td>
         </tr>
         <tr>
-            <td><img src="https://github.com/589hero/image-background-changer-demo/blob/main/static/images/car-1.jpg" width="300" height="200"/></td>
-            <td><img src="https://github.com/589hero/image-background-changer-demo/blob/main/static/images/sky-1.jpeg" width="300" height="200"/></td>
-            <td><img src="https://github.com/589hero/image-background-changer-demo/blob/main/static/images/car-1-out.png" width="300" height="200"/></td>
+            <td><img src="https://github.com/589hero/image-background-changer-demo/blob/main/static/images/car-1.jpg?raw=true" width="300" height="200"/></td>
+            <td><img src="https://github.com/589hero/image-background-changer-demo/blob/main/static/images/sky-1.jpeg?raw=true" width="300" height="200"/></td>
+            <td><img src="https://github.com/589hero/image-background-changer-demo/blob/main/static/images/car-1-out.png?raw=true" width="300" height="200"/></td>
         </tr>
     </tbody>
 </table>
