@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="../static/js/main.js"></script>
+    </head>
+    <body>
+        <div id="page-wrapper" class="container my-5">
+            <!-- <div class="jumbotron mt-4"> -->
+            <div id="header" class="text-center">
+                <h1 class="mb-3">Image Background Changer</h1>
+                <h6>Change background of image using segmentation!</h6>
+                <a href="https://github/589hero/image-background-changer-demo" class="mr-5">GitHub</a>
+                <a href="https://ainize.ai/589hero/image-background-changer-demo">Ainize</a>
+            </div>
+            <hr class="my-3">
+
+            <div id="explanation" class="text-center">
+                <h2 class="mb-3">How to use</h1>
+                <div class="text-left d-inline-flex">
+                    <p>
+                        1.&nbsp;&nbsp;Upload Original Image and Background Image.<br>
+                        2.&nbsp;&nbsp;Press "Run" Button<br>
+                        3.&nbsp;&nbsp;Check out the output image with changed background!<br>
+                    </p>
+                </div>
+            </div>
+            <hr class="my-3">
+
+            <div id="examples" class="text-center">
+                <h2 class="mb-3">Examples</h1>
+                <div id="example">
+                    <figure style="display: inline-block;">
+                        <img id="sample1-1" width="250" height="200" src="../static/images/animal-1.jpg">
+                    </figure>
+                    <figure style="display: inline-block;"> 
+                        <img id="sample2-1" width="250" height="200" src="../static/images/forest-1.jpeg">
+                    </figure>
+                    <figure style="display: inline-block;">
+                        <img id="sample3-1" width="250" height="200" src="../static/images/animal-1-out.png">
+                    </figure>
+                </div>
+                <div id="example2">
+                    <figure style="display: inline-block;">
+                        <img id="sample1-2" width="250" height="200" src="../static/images/car-1.jpg">
+                        <figcaption>Original Image</figcaption>
+                    </figure>
+                    <figure style="display: inline-block;"> 
+                        <img id="sample2-2" width="250" height="200" src="../static/images/sky-1.jpeg">
+                        <figcaption>Background Image</figcaption>
+                    </figure>
+                    <figure style="display: inline-block;">
+                        <img id="sample3-2" width="250" height="200" src="../static/images/car-1-out.png">
+                        <figcaption>Result Image</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <hr class="my-3">
+
+            <div id="img-uploader" class="row justify-content-center">
+                <div id="org-img-contents" class="col-4 col-6-medium col-12-small text-center">
+                    <section>
+                        <h3>Original Image</h2>
+                        <img id="org-img" class="mb-2" width="350" height="350" src="../static/images/thumbnail-1.jpeg">
+                        <input type='file' id='org-img-input' onchange="setThumbnail(event, 'org-img');">
+                    </section>
+                </div>
+                <div id="bg-img-contents" class="col-4 col-6-medium col-12-small text-center">
+                    <section>
+                        <h3>Background Image</h2>
+                        <img id="bg-img" class="mb-2" width="350" height="350" src="../static/images/thumbnail-1.jpeg">
+                        <input type='file' id='bg-img-input' onchange="setThumbnail(event, 'bg-img');">
+                    </section>
+                </div>
+            </div>
+            <div class="my-5 text-center">
+                <button id="run" type='submit' class="btn btn-primary" style="margin-left: auto;" onclick="formSend();"> RUN </button>
+            </div>
+            <div class="text-center">
+                <h3>Result</h3>
+                <img id="result-img" style="display: inline-block;" width="500" height="350" src="../static/images/thumbnail-1.jpeg">
+            </div>
+            <!-- </div> -->
+        </div>
+    </body>
+</html>
