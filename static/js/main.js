@@ -3,15 +3,14 @@ function formSend() {
   const orgImage = document.getElementById('org-img-input').files[0];
   const bgImage = document.getElementById('bg-img-input').files[0];
 
-  // original image, background image 추가하기
-	if(orgImage == null){
-		alert("Input the Original Image");
-		return;
-	}
-	else if(bgImage == null){
-		alert("Input the Background Image");
-		return;
-	}
+  if(orgImage == null){
+      alert("Input the Original Image");
+      return;
+  }
+  else if(bgImage == null){
+      alert("Input the Background Image");
+        return;
+    }
 
   formData.append("orgImage", orgImage);
 	formData.append("bgImage", bgImage);
