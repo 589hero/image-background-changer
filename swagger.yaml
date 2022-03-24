@@ -1,0 +1,68 @@
+openapi: '3.0.2'
+info:
+  title: Image Background Changer
+  description: | 
+    This API is about Image Background Changer opensource project.
+    
+    You can change backgounrd of image depending on backgounrd image you upload.
+    You can test Image Background Changer in API or **[Web Server](https://main-image-background-changer-589hero.endpoint.ainize.ai/)**.
+    
+    Rembg Package Repo used for project : [https://github.com/danielgatis/rembg](https://github.com/danielgatis/rembg)
+    
+    ---
+      How to use:
+      * Upload an image to change the background. -> Original Image
+      * Upload an image that will be the background. -> Background Image
+      * Press "RUN" button.
+      * Check out the output image with changed background!
+
+
+  version: '1.0'
+  license:
+    name: MIT License
+    url: https://github.com/589hero/image-background-changer/blob/main/LICENSE
+  contact:
+    name: Donghoon Baek
+    email: 589hero@gmail.com
+
+servers:
+  - url: https://main-image-background-changer-589hero.endpoint.ainize.ai/
+
+paths:
+  /change-bg:
+    post:
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                Original image:
+                  type: string
+                  format: binary
+                Background Image:
+                  type: string
+                  format: binary
+              required:
+                - original-image
+                - background-image
+      responses:
+        '200':
+          description: success
+          content:
+            image/*:
+              schema:
+                type: string
+                format: binary
+        '400':
+          description: Empty Field
+        '404':
+          description: Model Not Found
+        '500':
+          description: Server Error
+  /healthz:
+    get:
+      responses:
+        '200':
+          description: ok
