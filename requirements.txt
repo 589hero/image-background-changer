@@ -3,3 +3,4 @@ pillow==9.0.0
 onnxruntime==1.10.0
 rembg==2.0.5
 waitress==2.0.0
+itsdangerous==2.0.1
