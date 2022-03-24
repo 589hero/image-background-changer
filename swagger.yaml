@@ -11,9 +11,8 @@ info:
     
     ---
       How to use:
-      * Upload an image to change the background. -> Original Image
-      * Upload an image that will be the background. -> Background Image
-      * Press "RUN" button.
+      * Upload an image to change the background. -> orgImage
+      * Upload an image that will be the background. -> bgImage
       * Check out the output image with changed background!
 
 
@@ -38,15 +37,18 @@ paths:
             schema:
               type: object
               properties:
-                Original image:
+                orgImage:
                   type: string
                   format: binary
-                Background Image:
+                bgImage:
                   type: string
                   format: binary
               required:
-                - original-image
-                - background-image
+                - orgImage
+                - bgImage
+              encoding:
+                file:
+                  contentType: image/png, image/jpg, image/jpeg
       responses:
         '200':
           description: success
