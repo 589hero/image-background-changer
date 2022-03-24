@@ -84,7 +84,7 @@ def change_bg():
 
 
 @app.route("/healthz", methods=["GET"])
-def checkHealth():
+def check_health():
     return "healthy", 200
 
 
