@@ -1,7 +1,7 @@
 [![Run on Ainize](https://ainize.ai/images/run_on_ainize_button.svg)](https://ainize.web.app/redirect?git_repo=https://github.com/589hero/image-background-changer-demo)
 
 # Image Background Changer Demo
-You can change background of images on this <a href="https://main-image-background-changer-demo-589hero.endpoint.ainize.ai/">webpage</a>.
+You can change background of images on this <a href="https://main-image-background-changer-589hero.endpoint.ainize.ai/">webpage</a>.
 
 Just upload Original Image and Background Image and Press "Run" button!
 
